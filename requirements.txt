@@ -66,6 +66,7 @@ langchain-classic==1.0.7
 langchain-community==0.4.2
 langchain-core==1.4.0
 langchain-experimental==0.4.2
+langchain-faiss==0.1.1
 langchain-google-genai==4.2.3
 langchain-huggingface==1.2.2
 langchain-openai==1.2.2
