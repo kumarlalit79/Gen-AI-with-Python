@@ -45,7 +45,7 @@ embeddings = OpenAIEmbeddings(
 vector_store = FAISS.from_documents(chunks, embeddings)
 
 # print(vector_store.index_to_docstore_id)
-
+    
 # if you want to see any particular chunk
 # print(vector_store.get_by_ids(['9298effa-950b-4ac2-b2cb-144d83884afb']))
 
@@ -86,6 +86,12 @@ retrievad_docs = retrieval.invoke(question)
 
 context_text = "\n\n".join(doc.page_content for doc in retrievad_docs)
 # print(context_text)
+# ya to upper ki ek line use karlo ya fir neeche ki 4 line
+# texts = []
+# for doc in retrieved_docs:
+#     texts.append(doc.page_content)
+# context_text = "\n\n".join(texts)
+
 
 final_prompt = prompt.invoke({
     "context": context_text,
